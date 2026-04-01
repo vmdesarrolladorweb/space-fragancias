@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.banner {
+    background: #D4AF37;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 35px 10px 30px;
+}
+
+/* ==================== LOGO + TÍTULO ==================== */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 0px;
+    transform: translateX(-35px);
+}
+
+.logo-title img {
+    width: 220px;
+    height: 220px;
+    filter: drop-shadow(0 0 20px #D4AF37);
+    flex-shrink: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #D4AF37;
+    text-shadow: 0 0 6px #D4AF37, 0 0 10px rgba(212, 175, 55, 0.85), 0 0 5px rgba(212, 175, 55, 0.6);
+    margin: 0;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+/* ==================== HEADER FILTERS ==================== */
+.header-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .header-filters {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+input, .custom-select {
+    width: 360px;
+}
+
+input {
+    height: 58px;
+    padding: 0 22px;
+    margin-top: 11px;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid #D4AF37;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.select-button {
+    height: 58px;
+    width: 100%;
+    padding: 0 22px;
+    background: #0a0a0a;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-button:hover {
+    background: rgba(212,175,55,0.15);
+}
+
+.arrow {
+    font-size: 1.3rem;
+    transition: transform 0.3s;
+}
+
+.select-button.open .arrow {
+    transform: rotate(180deg);
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0a0a0a;
+    border: 2px solid #D4AF37;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    max-height: 340px;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.select-options.show {
+    display: block;
+}
+
+.select-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-options::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+.select-options::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 10px;
+}
+
+.select-option {
+    padding: 15px 22px;
+    font-size: 1.08rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 1px solid rgba(212,175,55,0.1);
+}
+
+.select-option:last-child {
+    border-bottom: none;
+}
+
+.select-option:hover {
+    background: #D4AF37 !important;
+    color: #000000 !important;
+    font-weight: 700;
+}
+
+/* ==================== TAB BAR ==================== */
+.tab-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    margin: 35px 0;
+}
+
+.tab-button {
+    padding: 19px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    background: #D4AF37;
+    color: black;
+}
+
+.tab-button:not(.active) {
+    background: transparent;
+    color: #D4AF37;
+    border: 3px solid #D4AF37;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ==================== GRID ORIGINAL (3 columnas) ==================== */
+.grid {
+    display: grid;
+    gap: 22px;
+    padding: 25px;
+}
+
+.card-decant, .card-full-size {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 14px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content { flex: 1; }
+
+.img-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 12px;
+    flex-shrink: 0;
+    cursor: zoom-in;
+    transition: all 0.3s ease;
+}
+
+.img-container:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card-decant:hover, .card-full-size:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 28px rgba(212,175,55,0.65);
+}
+
+.stock {
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 0.92rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 12px 0;
+}
+
+.stock.available {
+    background: rgba(0,255,100,0.15);
+    color: #00ff88;
+    border: 1px solid #00ff88;
+}
+
+.stock.sold {
+    background: rgba(255,60,60,0.15);
+    color: #ff6666;
+    border: 1px solid #ff6666;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #D4AF37;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 12px;
+    padding: 16px;
+    background: #D4AF37;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* ==================== LIGHTBOX CON ZOOM ==================== */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.98);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 94%;
+    max-height: 94%;
+    text-align: center;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.5);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.zoomable-image {
+    width: 100%;
+    height: auto;
+    max-height: 72vh;
+    object-fit: contain;
+    transition: transform 0.08s linear;
+    user-select: none;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    background: #0a0a0a;
+    color: #D4AF37;
+    font-size: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #D4AF37;
+    transition: all 0.3s;
+    z-index: 2100;
+}
+
+.close-lightbox:hover {
+    background: #D4AF37;
+    color: #000;
+    transform: rotate(90deg) scale(1.1);
+}
+
+.lightbox-info {
+    margin-top: 18px;
+    background: rgba(10, 10, 10, 0.85);
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.lightbox-info h2 {
+    color: #D4AF37;
+    font-size: 1.75rem;
+    margin-bottom: 6px;
+}
+
+.lightbox-info p {
+    color: #ccc;
+    font-size: 1.15rem;
+}
+
+.lightbox-price {
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: #D4AF37;
+    display: block;
+    margin-top: 8px;
+}
+
+/* ==================== RESPONSIVE (mantiene 3 columnas) ==================== */
+@media (max-width: 600px) {
+    .logo-title img { width: 160px; height: 160px; }
+    h1 { font-size: 2.4rem; letter-spacing: 3px; }
+    .card-decant, .card-full-size { 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .img-container { 
+        width: 100%; 
+        height: 220px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+}

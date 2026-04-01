@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Fragancias</title>
+    
+    <!-- ==================== FAVICONS ==================== -->
+    <!-- Prioridad para navegadores modernos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    
+    <!-- Fallback clásico -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    
+    <!-- Apple Touch Icon (iOS) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    
+    <!-- Android Chrome grande (para pantalla de inicio) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="banner">
+        CATÁLOGO DE CONSULTA DE STOCK. COMPRAS COORDINADAS POR MD O WHATSAPP
+    </div>
+    <header>
+        <div class="logo-title">
+            <img src="LogoTransparente.png" alt="Space Fragancias Logo">
+            <h1>SPACE FRAGANCIAS</h1>
+        </div>
+    
+        <div class="header-filters">
+            <input type="text" id="search" placeholder="BUSCAR FRAGANCIA...">
+        
+            <div class="custom-select">
+                <button id="selectButton" class="select-button">
+                    TODAS LAS MARCAS
+                    <span class="arrow">▼</span>
+                </button>
+                <div id="selectOptions" class="select-options">
+                    <!-- JS genera las opciones -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tab-bar">
+        <button class="tab-button active" data-tab="decants">DECANTS</button>
+        <button class="tab-button" data-tab="full">FRASCOS</button>
+    </div>
+    <main>
+        <section id="decants" class="tab-content active">
+            <div class="grid" id="decantsContainer"></div>
+        </section>
+    
+        <section id="full" class="tab-content">
+            <div class="grid" id="fullContainer"></div>
+        </section>
+    </main>
+    
+    <!-- LIGHTBOX CON ZOOM -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <div class="image-wrapper">
+                <img id="lightbox-image" src="" alt="" class="zoomable-image">
+            </div>
+           
+            <div class="lightbox-info">
+                <h2 id="lightbox-name"></h2>
+                <p id="lightbox-brand"></p>
+                <span id="lightbox-price" class="lightbox-price"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
