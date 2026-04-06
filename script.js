@@ -187,6 +187,8 @@ document.addEventListener("click", (e) => {
 });
 
 // ================= TAB, SELECT, FILTRO, WHATSAPP =================
+// ================= TAB, SELECT, FILTRO, WHATSAPP =================
+
 document.querySelectorAll(".tab-button").forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelectorAll(".tab-button").forEach(b => b.classList.remove("active"));
@@ -198,6 +200,7 @@ document.querySelectorAll(".tab-button").forEach(btn => {
 });
 
 const marcasUnicas = [...new Set([...decants.map(p => p.brand), ...full.map(p => p.brand)])].sort();
+
 const selectButton = document.getElementById("selectButton");
 const selectOptions = document.getElementById("selectOptions");
 let currentMarca = "all";
@@ -251,10 +254,25 @@ function filtrar() {
 
 searchInput.addEventListener("keyup", filtrar);
 
+// ================= FUNCIÓN CONSULTAR (WHATSAPP) =================
 function consultar(nombre) {
-    const mensaje = `Hola, consulto por el stock de **${nombre}** en Space Fragancias. ¿Está disponible?`;
-    const numero = "5493498435466"; // Cambia por tu número
+    const perfumeDecant = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
+    const perfumeFrasco = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
+
+    let aclaracion = "";
+
+    if (perfumeDecant && perfumeFrasco) {
+        aclaracion = " (tanto en decant como en frasco completo)";
+    } else if (perfumeDecant) {
+        aclaracion = " (decant)";
+    } else if (perfumeFrasco) {
+        aclaracion = " (frasco completo)";
+    }
+
+    const mensaje = `Hola! 👋\nConsulto por el stock de **${nombre}**${aclaracion} en Space Fragancias.\n¿Está disponible?`;
+
+    const numero = "5493498435466"; // Cambia por tu número si es necesario
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
 
-console.log("✅ Space Fragancias - Diseño original restaurado + Zoom activado");
+console.log("✅ Space Fragancias - Diseño original restaurado + Zoom activado + Mensaje WhatsApp mejorado");
