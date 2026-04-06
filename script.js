@@ -1,7 +1,6 @@
 // ===== DECANTS =====
 const decants = [
     {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:12000, zoom:1.3, position:"50% 72%"},
-    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:12000, zoom:1.3, position:"50% 67%"},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:12000, zoom:1.1, position:"50% 58%"},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:13000, zoom:1.3, position:"50% 75%"},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:11000, zoom:1.2, position:"50% 55%"},
@@ -30,7 +29,8 @@ const decants = [
     {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:15000, zoom:1.3, position:"50% 70%"},
     {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:12000, zoom:1.4, position:"50% 65%"},
     {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:11000, zoom:1.4, position:"50% 66%"},
-    {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.4, position:"50% 77%"}
+    {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.4, position:"50% 77%"},
+	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:12000, zoom:1.3, position:"50% 67%"},
 ];
 
 // ===== FRASCOS =====
