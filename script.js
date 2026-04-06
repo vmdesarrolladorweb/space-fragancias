@@ -1,60 +1,61 @@
 // ===== DECANTS =====
 const decants = [
-    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:12000, zoom:1.3, position:"50% 72%"},
-    {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:12000, zoom:1.1, position:"50% 58%"},
-    {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:13000, zoom:1.3, position:"50% 75%"},
-    {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:11000, zoom:1.2, position:"50% 55%"},
-    {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:11500, zoom:1.1, position:"50% 65%"},
-    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:12000, zoom:1.3, position:"50% 75%"},
-    {name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:13000, zoom:1.5, position:"50% 65%"},
-    {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.5, position:"50% 70%"},
-    {name:"EXTRAVAGANT LOVER", brand:"MAISON ALHAMBRA", img:"Extravagantlover.jpeg", price:11000, zoom:1.4, position:"50% 75%"},
-    {name:"FAKHAR PLATIN", brand:"LATTAFA", img:"FakharPlatin.jpeg", price:12000, zoom:1.3, position:"50% 50%"},
-    {name:"HAWAS ICE", brand:"RASASI", img:"HawasIce.jpeg", price:15000, zoom:1.4, position:"50% 70%"},
-    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"HisConfession.jpeg", price:11000, zoom:1.1, position:"50% 60%"},
-    {name:"HONOR & GLORY", brand:"LATTAFA", img:"HonorGlory.jpeg", price:12000, zoom:1.3, position:"50% 70%"},
-    {name:"INTENSE MAN", brand:"ARMAF", img:"IntenseMan.jpeg", price:16000, zoom:1.3, position:"50% 60%"},
-    {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg", price:11500, zoom:1.2, position:"50% 67%"},
-    {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:11000, zoom:1.3, position:"50% 67%"},
-    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:13000, zoom:1.5, position:"50% 70%"},
-    {name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:11500, zoom:1.3, position:"50% 70%"},
-    {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:12000, zoom:1.3, position:"50% 70%"},
-    {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:12000, zoom:1.4, position:"50% 70%"},
-    {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:13000, zoom:1.5, position:"50% 68%"},
-    {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:11000, zoom:1.4, position:"50% 65%"},
-    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:11500, zoom:1.3, position:"50% 70%"},
-    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"SpectreGhost.jpeg", price:11500, zoom:1.5, position:"50% 65%"},
-    {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:12000, zoom:1.3, position:"50% 75%"},
-    {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:12000, zoom:1.4, position:"50% 72%"},
-    {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:15000, zoom:1.3, position:"50% 70%"},
-    {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:12000, zoom:1.4, position:"50% 65%"},
-    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:11000, zoom:1.4, position:"50% 66%"},
-    {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.4, position:"50% 77%"},
-	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:12000, zoom:1.3, position:"50% 67%"},
+    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:8000, zoom:1., position:"50% 68%", stock:true},
+    {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:8000, zoom:1., position:"50% 58%", stock:true},
+    {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:10000, zoom:1., position:"50% 68%", stock:true},
+    {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:8000, zoom:1., position:"80% 55%", stock:true},
+    {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:8000, zoom:1., position:"50% 60%", stock:true},
+    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:8000, zoom:1., position:"50% 67%", stock:true},
+    {name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:8000, zoom:1.1, position:"50% 60%", stock:true},
+    {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:true},
+    {name:"EXTRAVAGANT LOVER", brand:"MAISON ALHAMBRA", img:"Extravagantlover.jpeg", price:8000, zoom:1.1, position:"50% 67%", stock:true},
+    {name:"FAKHAR PLATIN", brand:"LATTAFA", img:"FakharPlatin.jpeg", price:8000, zoom:1., position:"50% 50%", stock:true},
+    {name:"HAWAS ICE", brand:"RASASI", img:"HawasIce.jpeg", price:8500, zoom:1.1, position:"50% 64%", stock:true},
+    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"HisConfession.jpeg", price:8500, zoom:1., position:"50% 47%", stock:true},
+    {name:"HONOR & GLORY", brand:"LATTAFA", img:"HonorGlory.jpeg", price:8000, zoom:1.1, position:"50% 65%", stock:true},
+    {name:"INTENSE MAN", brand:"ARMAF", img:"IntenseMan.jpeg", price:8000, zoom:1., position:"50% 55%", stock:true},
+    {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg", price:8000, zoom:1., position:"50% 63%", stock:true},
+    {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:8000, zoom:1., position:"50% 65%", stock:true},
+    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:8000, zoom:1.2, position:"50% 65%", stock:true},
+    {name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:8000, zoom:1., position:"50% 65%", stock:true},
+    {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:9000, zoom:1.1, position:"50% 67%", stock:true},
+    {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:true},
+    {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:true},
+    {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:8000, zoom:1., position:"50% 62%", stock:true},
+    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:8000, zoom:1., position:"50% 65%", stock:true},
+    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"SpectreGhost.jpeg", price:10000, zoom:1.2, position:"50% 60%", stock:true},
+    {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:9000, zoom:1., position:"50% 67%", stock:true},
+    {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:9000, zoom:1., position:"50% 68%", stock:true},
+    {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:14000, zoom:1., position:"50% 65%", stock:true},
+    {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:9000, zoom:1., position:"50% 61%", stock:true},
+    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:8000, zoom:1., position:"50% 62%", stock:true},
+    {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.1, position:"50% 70%", stock:true},
+    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:true},
 ];
 
 // ===== FRASCOS =====
 const full = [
-    {name:"9PM", brand:"AFNAN", img:"9pm.jpeg", price:90000},
-    {name:"KHAMRAH", brand:"LATTAFA", img:"khamrah.jpeg", price:85000},
-    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:80000},
-    {name:"FAKHAR", brand:"LATTAFA", img:"fakhar.jpeg", price:78000},
-    {name:"EROS", brand:"VERSACE", img:"eros.jpeg", price:120000},
-    {name:"EROS FLAME", brand:"VERSACE", img:"erosflame.jpeg", price:120000},
-    {name:"DYLAN BLUE", brand:"VERSACE", img:"dylanblue.jpeg", price:110000},
-    {name:"TOY BOY", brand:"MOSCHINO", img:"toyboy.jpeg", price:100000},
-    {name:"LIMONI", brand:"MAISON ALHAMBRA", img:"limoni.jpeg", price:70000},
-    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"sceptremalachite.jpeg", price:75000},
-    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"spectreghost.jpeg", price:75000},
-    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"hisconfession.jpeg", price:72000},
-    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"victoriosonero.jpeg", price:72000}
+    {name:"9PM", brand:"AFNAN", img:"9pm.jpeg", price:90000, stock:false},
+    {name:"KHAMRAH", brand:"LATTAFA", img:"khamrah.jpeg", price:85000, stock:false},
+    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:80000, zoom:1., position:"50% 67%", stock:false},
+    {name:"FAKHAR", brand:"LATTAFA", img:"fakhar.jpeg", price:78000, stock:false},
+    {name:"EROS", brand:"VERSACE", img:"eros.jpeg", price:120000, stock:false},
+     {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:false},
+    {name:"DYLAN BLUE", brand:"VERSACE", img:"dylanblue.jpeg", price:110000, stock:false},
+    {name:"TOY BOY", brand:"MOSCHINO", img:"toyboy.jpeg", price:100000, stock:false},
+    {name:"LIMONI", brand:"MAISON ALHAMBRA", img:"limoni.jpeg", price:70000, stock:false},
+    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"sceptremalachite.jpeg", price:75000, stock:false},
+    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"spectreghost.jpeg", price:75000, stock:false},
+    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"hisconfession.jpeg", price:72000, stock:false},
+    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false}
 ];
 
 // ================= GENERADOR DE CARDS =================
 function crearCard(p, tipo) {
-    const esDecant = tipo === "decant";
+    const esDisponible = p.stock;
+
     return `
-        <div class="card-${esDecant ? 'decant' : 'full-size'}">
+        <div class="card-${tipo === "decant" ? 'decant' : 'full-size'}">
             <div class="img-container">
                 <img src="Perfumes/${p.img}"
                      style="--zoom: ${p.zoom || 1};
@@ -69,10 +70,12 @@ function crearCard(p, tipo) {
             <div class="card-content">
                 <h2>${p.name}</h2>
                 <p>${p.brand}</p>
-                <span class="price">$${p.price.toLocaleString('es-AR')}</span>
-                <div class="stock ${esDecant ? 'available' : 'sold'}">
-                    ${esDecant ? '✅ DISPONIBLE' : '❌ AGOTADO'}
+                ${p.stock ? `<span class="price">$${p.price.toLocaleString('es-AR')}</span>` : ``}
+
+                <div class="stock ${esDisponible ? 'available' : 'sold'}">
+                    ${esDisponible ? '✅ DISPONIBLE' : '❌ AGOTADO'}
                 </div>
+
                 <button onclick="consultar('${p.name.replace(/'/g, "\\'")}')">
                     CONSULTAR DISPONIBILIDAD
                 </button>
@@ -81,9 +84,17 @@ function crearCard(p, tipo) {
     `;
 }
 
-// Render cards
-document.getElementById("decantsContainer").innerHTML = decants.map(p => crearCard(p, "decant")).join("");
-document.getElementById("fullContainer").innerHTML = full.map(p => crearCard(p, "full")).join("");
+
+// ================= ORDENAR STOCK =================
+const decantsOrdenados = [...decants].sort((a, b) => b.stock - a.stock);
+const fullOrdenados = [...full].sort((a, b) => b.stock - a.stock);
+
+// ================= RENDER =================
+document.getElementById("decantsContainer").innerHTML =
+    decantsOrdenados.map(p => crearCard(p)).join("");
+
+document.getElementById("fullContainer").innerHTML =
+    fullOrdenados.map(p => crearCard(p)).join("");
 
 // ================= LIGHTBOX CON ZOOM (solo ruedita y móvil) =================
 const lightbox = document.getElementById("lightbox");
