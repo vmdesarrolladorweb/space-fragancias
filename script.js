@@ -187,7 +187,6 @@ document.addEventListener("click", (e) => {
 });
 
 // ================= TAB, SELECT, FILTRO, WHATSAPP =================
-// ================= TAB, SELECT, FILTRO, WHATSAPP =================
 
 document.querySelectorAll(".tab-button").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -254,25 +253,34 @@ function filtrar() {
 
 searchInput.addEventListener("keyup", filtrar);
 
-// ================= FUNCIÓN CONSULTAR (WHATSAPP) =================
+// ================= FUNCIÓN CONSULTAR (WHATSAPP) - CON PRECIO =================
 function consultar(nombre) {
-    const perfumeDecant = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
-    const perfumeFrasco = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
+    // Detectamos en qué pestaña está el usuario
+    const tabActiva = document.querySelector(".tab-content.active").id;
 
-    let aclaracion = "";
+    const esDecantTab = tabActiva === "decantsContainer" || tabActiva.includes("decant");
+    const esFrascoTab = tabActiva === "fullContainer" || tabActiva.includes("full");
 
-    if (perfumeDecant && perfumeFrasco) {
-        aclaracion = " (tanto en decant como en frasco completo)";
-    } else if (perfumeDecant) {
-        aclaracion = " (decant)";
-    } else if (perfumeFrasco) {
-        aclaracion = " (frasco completo)";
+    let tipo = "";
+    let precio = 0;
+
+    if (esDecantTab) {
+        const perfume = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
+        tipo = "decant";
+        precio = perfume ? perfume.price : 0;
+    } 
+    else if (esFrascoTab) {
+        const perfume = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
+        tipo = "frasco completo";
+        precio = perfume ? perfume.price : 0;
     }
 
-    const mensaje = `Hola! 👋\nConsulto por el stock de **${nombre}**${aclaracion} en Space Fragancias.\n¿Está disponible?`;
+    const precioFormateado = precio > 0 ? ` - $${precio.toLocaleString('es-AR')}` : "";
 
-    const numero = "5493498435466"; // Cambia por tu número si es necesario
+    const mensaje = `Hola! 👋\nConsulto por el stock de **${nombre}** (${tipo}${precioFormateado}) en Space Fragancias.\n¿Está disponible?`;
+
+    const numero = "5493498435466"; // Cambia si es necesario
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
 
-console.log("✅ Space Fragancias - Diseño original restaurado + Zoom activado + Mensaje WhatsApp mejorado");
+console.log("✅ Space Fragancias - Mensaje WhatsApp con precio según pestaña activa");
