@@ -253,7 +253,7 @@ searchInput.addEventListener("keyup", filtrar);
 
 function consultar(nombre) {
     const mensaje = `Hola, consulto por el stock de **${nombre}** en Space Fragancias. ¿Está disponible?`;
-    const numero = "549xxxxxxxxxx"; // Cambia por tu número
+    const numero = "5493492435466"; // Cambia por tu número
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
 
