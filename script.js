@@ -30,24 +30,42 @@ const decants = [
     {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:9000, zoom:1., position:"50% 61%", stock:true},
     {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:8000, zoom:1., position:"50% 62%", stock:true},
     {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.1, position:"50% 70%", stock:true},
-    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:true},
+    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:true}
 ];
 
 // ===== FRASCOS =====
 const full = [
-    {name:"9PM", brand:"AFNAN", img:"9pm.jpeg", price:90000, stock:false},
-    {name:"KHAMRAH", brand:"LATTAFA", img:"khamrah.jpeg", price:85000, stock:false},
-    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:80000, zoom:1., position:"50% 67%", stock:false},
-    {name:"FAKHAR", brand:"LATTAFA", img:"fakhar.jpeg", price:78000, stock:false},
-    {name:"EROS", brand:"VERSACE", img:"eros.jpeg", price:120000, stock:false},
-     {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:false},
-    {name:"DYLAN BLUE", brand:"VERSACE", img:"dylanblue.jpeg", price:110000, stock:false},
-    {name:"TOY BOY", brand:"MOSCHINO", img:"toyboy.jpeg", price:100000, stock:false},
-    {name:"LIMONI", brand:"MAISON ALHAMBRA", img:"limoni.jpeg", price:70000, stock:false},
-    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"sceptremalachite.jpeg", price:75000, stock:false},
-    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"spectreghost.jpeg", price:75000, stock:false},
-    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"hisconfession.jpeg", price:72000, stock:false},
-    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false}
+    {name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
+    {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:9000, zoom:1.1, position:"50% 67%", stock:false},
+    {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
+    {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:false},
+    {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false},
+    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
+    {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"SpectreGhost.jpeg", price:10000, zoom:1.2, position:"50% 60%", stock:false},
+    {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:9000, zoom:1., position:"50% 67%", stock:false},
+    {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:9000, zoom:1., position:"50% 68%", stock:false},
+    {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:14000, zoom:1., position:"50% 65%", stock:false},
+    {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:9000, zoom:1., position:"50% 61%", stock:false},
+    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false},
+    {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.1, position:"50% 70%", stock:false},
+    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:false},
+	{name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:8000, zoom:1., position:"50% 68%", stock:false},
+    {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:8000, zoom:1., position:"50% 58%", stock:false},
+    {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:10000, zoom:1., position:"50% 68%", stock:false},
+    {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:8000, zoom:1., position:"80% 55%", stock:false},
+    {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:8000, zoom:1., position:"50% 60%", stock:false},
+    {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:8000, zoom:1., position:"50% 67%", stock:false},
+    {name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:8000, zoom:1.1, position:"50% 60%", stock:false},
+    {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:false},
+    {name:"EXTRAVAGANT LOVER", brand:"MAISON ALHAMBRA", img:"Extravagantlover.jpeg", price:8000, zoom:1.1, position:"50% 67%", stock:false},
+    {name:"FAKHAR PLATIN", brand:"LATTAFA", img:"FakharPlatin.jpeg", price:8000, zoom:1., position:"50% 50%", stock:false},
+    {name:"HAWAS ICE", brand:"RASASI", img:"HawasIce.jpeg", price:8500, zoom:1.1, position:"50% 64%", stock:false},
+    {name:"HIS CONFESSION", brand:"MAISON ALHAMBRA", img:"HisConfession.jpeg", price:8500, zoom:1., position:"50% 47%", stock:false},
+    {name:"HONOR & GLORY", brand:"LATTAFA", img:"HonorGlory.jpeg", price:8000, zoom:1.1, position:"50% 65%", stock:false},
+    {name:"INTENSE MAN", brand:"ARMAF", img:"IntenseMan.jpeg", price:8000, zoom:1., position:"50% 55%", stock:false},
+    {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg", price:8000, zoom:1., position:"50% 63%", stock:false},
+    {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
+    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:8000, zoom:1.2, position:"50% 65%", stock:false}
 ];
 
 // ================= GENERADOR DE CARDS =================
@@ -65,7 +83,8 @@ function crearCard(p, tipo) {
                      class="product-image"
                      data-name="${p.name}"
                      data-brand="${p.brand}"
-                     data-price="${p.price}">
+                     data-price="${p.price}"
+					 data-stock="${p.stock}">
             </div>
             <div class="card-content">
                 <h2>${p.name}</h2>
@@ -114,7 +133,13 @@ function openLightbox(imgElement) {
     lightboxImage.src = imgElement.src;
     lightboxName.textContent = imgElement.dataset.name;
     lightboxBrand.textContent = imgElement.dataset.brand;
+    const enStock = imgElement.dataset.stock === "true";
+
+if (enStock) {
     lightboxPrice.textContent = `$${parseInt(imgElement.dataset.price).toLocaleString('es-AR')}`;
+} else {
+    lightboxPrice.textContent = "AGOTADO";
+}
 
     scale = 1;
     translateX = 0;
@@ -274,21 +299,32 @@ function consultar(nombre) {
 
     let tipo = "";
     let precio = 0;
+	let enStock = false;
 
     if (esDecantTab) {
-        const perfume = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
-        tipo = "decant";
-        precio = perfume ? perfume.price : 0;
-    } 
-    else if (esFrascoTab) {
-        const perfume = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
-        tipo = "frasco completo";
-        precio = perfume ? perfume.price : 0;
-    }
+    const perfume = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
+    tipo = "decant";
+    precio = perfume ? perfume.price : 0;
+    enStock = perfume ? perfume.stock : false;
+} 
+else if (esFrascoTab) {
+    const perfume = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
+    tipo = "frasco completo";
+    precio = perfume ? perfume.price : 0;
+    enStock = perfume ? perfume.stock : false;
+}
 
-    const precioFormateado = precio > 0 ? ` - $${precio.toLocaleString('es-AR')}` : "";
+    const precioFormateado = (enStock && precio > 0)
+    ? ` - $${precio.toLocaleString('es-AR')}`
+    : "";
 
-    const mensaje = `Hola! 👋\nConsulto por el stock de **${nombre}** (${tipo}${precioFormateado}) en Space Fragancias.\n¿Está disponible?`;
+    let mensaje = "";
+
+if (enStock) {
+    mensaje = `Hola! 👋\nConsulto por el stock de *${nombre}* (${tipo}${precioFormateado}) en Space Fragancias.\n¿Sigue disponible?`;
+} else {
+    mensaje = `Hola! 👋\nMe interesaría saber cómo puedo conseguir *${nombre}* (${tipo}) aunque actualmente esté agotado.\n¿Va a ingresar nuevamente?`;
+}
 
     const numero = "5493498435466"; // Cambia si es necesario
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
