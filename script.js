@@ -22,7 +22,7 @@ const decants = [
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:6500, zoom:1.2, position:"50% 67%", stock:false},
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:5500, zoom:1.1, position:"50% 62%", stock:true},
     {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:5500, zoom:1., position:"50% 62%", stock:true},
-    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:8000, zoom:1., position:"50% 65%", stock:true},
+    {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:6000, zoom:1., position:"50% 65%", stock:true},
     {name:"SPECTRE GHOST", brand:"FRENCH AVENUE", img:"SpectreGhost.jpeg", price:9000, zoom:1.2, position:"50% 60%", stock:true},
     {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:6000, zoom:1., position:"50% 67%", stock:true},
     {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:6500, zoom:1., position:"50% 68%", stock:true},
@@ -37,7 +37,7 @@ const decants = [
     {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:7500, zoom:1., position:"50% 48%", stock:true},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6000, zoom:1.2, position:"50% 55%", stock:true},
-    {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:7000, zoom:1.1, position:"50% 53%", stock:true},
+    {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:8000, zoom:1.1, position:"50% 53%", stock:true},
 	{name:"AMBER OUD DUBAI NIGHT", brand:"AL HARAMAIN", img:"DubaiNight.jpeg", price:8500, zoom:1., position:"50% 50%", stock:true},
     {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:8500, zoom:1., position:"50% 63%", stock:true}
 ];
