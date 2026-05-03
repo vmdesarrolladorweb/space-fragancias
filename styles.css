@@ -405,6 +405,36 @@ button:hover {
     margin-top: 8px;
 }
 
+/* ===== DESCUENTO PRO ===== */
+
+.old-price {
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-size: 1rem;
+    display: block;
+}
+
+.new-price {
+    color: #D4AF37;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #D4AF37;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #D4AF37;
+    z-index: 5;
+}
+
+
 /* ==================== RESPONSIVE COMPLETO FINAL PRO ==================== */
 
 /* 📱 MOBILE */

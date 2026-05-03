@@ -1,6 +1,6 @@
 // ===== DECANTS =====
 const decants = [
-    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6000, zoom:1., position:"50% 68%", stock:true},
+    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6000,newPrice:0, discount:false, zoom:1., position:"50% 68%", stock:true},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:8000, zoom:1., position:"50% 58%", stock:true},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:8000, zoom:1., position:"50% 68%", stock:true},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:5000, zoom:1., position:"80% 55%", stock:true},
@@ -23,7 +23,7 @@ const decants = [
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:5500, zoom:1.1, position:"50% 62%", stock:true},
     {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:5500, zoom:1., position:"50% 62%", stock:true},
     {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:6000, zoom:1., position:"50% 65%", stock:true},
-    {name:"SPECTRE GHOST", brand:"FRENCH AVENUE", img:"SpectreGhost.jpeg", price:9000, zoom:1.2, position:"50% 60%", stock:true},
+    {name:"SPECTRE GHOST", brand:"FRENCH AVENUE", img:"SpectreGhost.jpeg", price:9000,newPrice:8500, discount:true, zoom:1.2, position:"50% 60%", stock:true},
     {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:6000, zoom:1., position:"50% 67%", stock:true},
     {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:6500, zoom:1., position:"50% 68%", stock:true},
     {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:13000, zoom:1., position:"50% 65%", stock:true},
@@ -36,7 +36,7 @@ const decants = [
     {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6000, zoom:1., position:"50% 55%", stock:true},
     {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:7500, zoom:1., position:"50% 48%", stock:true},
-	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6000, zoom:1.2, position:"50% 55%", stock:true},
+	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6000,newPrice:5000, discount:true, zoom:1.2, position:"50% 55%", stock:true},
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:8000, zoom:1.1, position:"50% 53%", stock:true},
 	{name:"AMBER OUD DUBAI NIGHT", brand:"AL HARAMAIN", img:"DubaiNight.jpeg", price:8500, zoom:1., position:"50% 50%", stock:true},
     {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:8500, zoom:1., position:"50% 63%", stock:true}
@@ -45,7 +45,7 @@ const decants = [
 // ===== FRASCOS =====
 const full = [
     {name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
-	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:55000, zoom:1.2, position:"50% 55%", stock:true},
+	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:60000,newPrice:55000, discount:true, zoom:1.2, position:"50% 55%", stock:true},
     {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:9000, zoom:1.1, position:"50% 67%", stock:false},
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:false},
@@ -61,7 +61,7 @@ const full = [
     {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:false},
 	{name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:8000, zoom:1., position:"50% 68%", stock:false},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:8000, zoom:1., position:"50% 58%", stock:false},
-    {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:87000, zoom:1., position:"50% 68%", stock:true},
+    {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:90000,newPrice:87000, discount:true, zoom:1., position:"50% 68%", stock:true},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:8000, zoom:1., position:"80% 55%", stock:false},
 	{name:"VINTAGE RADIO", brand:"LATTAFA", img:"VintageRadio.jpeg", price:60000, zoom:1., position:"50% 60%", stock:true},
     {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:8000, zoom:1., position:"50% 60%", stock:false},
@@ -95,12 +95,32 @@ function crearCard(p, tipo) {
                      data-name="${p.name}"
                      data-brand="${p.brand}"
                      data-price="${p.price}"
-					 data-stock="${p.stock}">
+					 data-stock="${p.stock}"
+					 data-discount="${p.discount}"
+					data-newprice="${p.newPrice}">
             </div>
             <div class="card-content">
                 <h2>${p.name}</h2>
                 <p>${p.brand}</p>
-                ${p.stock ? `<span class="price">$${p.price.toLocaleString('es-AR')}</span>` : ``}
+                ${p.stock ? `
+    ${p.discount 
+        ? (() => {
+            const porcentaje = Math.round(((p.price - p.newPrice) / p.price) * 100);
+            return `
+                <div class="discount-badge">-${porcentaje}%</div>
+
+                <span class="price old-price">
+                    $${p.price.toLocaleString('es-AR')}
+                </span>
+
+                <span class="price new-price">
+                    $${p.newPrice.toLocaleString('es-AR')}
+                </span>
+            `;
+        })()
+        : `<span class="price">$${p.price.toLocaleString('es-AR')}</span>`
+    }
+` : ``}
 
                 <div class="stock ${esDisponible ? 'available' : 'sold'}">
                     ${esDisponible ? '✅ DISPONIBLE' : '❌ AGOTADO'}
@@ -116,8 +136,22 @@ function crearCard(p, tipo) {
 
 
 // ================= ORDENAR STOCK =================
-const decantsOrdenados = [...decants].sort((a, b) => b.stock - a.stock);
-const fullOrdenados = [...full].sort((a, b) => b.stock - a.stock);
+const ordenar = (a, b) => {
+    // 1. PRIMERO descuentos
+    if ((b.discount || false) !== (a.discount || false)) {
+        return (b.discount || false) - (a.discount || false);
+    }
+
+    // 2. DESPUÉS stock
+    if (b.stock !== a.stock) {
+        return b.stock - a.stock;
+    }
+
+    return 0;
+};
+
+const decantsOrdenados = [...decants].sort(ordenar);
+const fullOrdenados = [...full].sort(ordenar);
 
 // ================= RENDER =================
 document.getElementById("decantsContainer").innerHTML =
@@ -146,8 +180,28 @@ function openLightbox(imgElement) {
     lightboxBrand.textContent = imgElement.dataset.brand;
     const enStock = imgElement.dataset.stock === "true";
 
+const descuento = imgElement.dataset.discount === "true";
+const nuevoPrecio = parseInt(imgElement.dataset.newprice);
+const precioOriginal = parseInt(imgElement.dataset.price);
+
 if (enStock) {
-    lightboxPrice.textContent = `$${parseInt(imgElement.dataset.price).toLocaleString('es-AR')}`;
+    if (descuento) {
+        const porcentaje = Math.round(((precioOriginal - nuevoPrecio) / precioOriginal) * 100);
+
+        lightboxPrice.innerHTML = `
+            <div class="discount-badge">-${porcentaje}%</div>
+
+            <span style="text-decoration:line-through; opacity:0.6;">
+                $${precioOriginal.toLocaleString('es-AR')}
+            </span><br>
+
+            <span style="color:#D4AF37;">
+                $${nuevoPrecio.toLocaleString('es-AR')}
+            </span>
+        `;
+    } else {
+        lightboxPrice.textContent = `$${precioOriginal.toLocaleString('es-AR')}`;
+    }
 } else {
     lightboxPrice.textContent = "AGOTADO";
 }
@@ -302,43 +356,42 @@ searchInput.addEventListener("keyup", filtrar);
 
 // ================= FUNCIÓN CONSULTAR (WHATSAPP) - CON PRECIO =================
 function consultar(nombre) {
-    // Detectamos en qué pestaña está el usuario
     const tabActiva = document.querySelector(".tab-content.active").id;
 
-    const esDecantTab = tabActiva === "decantsContainer" || tabActiva.includes("decant");
-    const esFrascoTab = tabActiva === "fullContainer" || tabActiva.includes("full");
-
+    let perfume = null;
     let tipo = "";
-    let precio = 0;
-	let enStock = false;
 
-    if (esDecantTab) {
-    const perfume = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
-    tipo = "decant";
-    precio = perfume ? perfume.price : 0;
-    enStock = perfume ? perfume.stock : false;
-} 
-else if (esFrascoTab) {
-    const perfume = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
-    tipo = "frasco completo";
-    precio = perfume ? perfume.price : 0;
-    enStock = perfume ? perfume.stock : false;
-}
+    if (tabActiva === "decants") {
+        perfume = decants.find(d => d.name.toLowerCase() === nombre.toLowerCase());
+        tipo = "decant";
+    } else {
+        perfume = full.find(f => f.name.toLowerCase() === nombre.toLowerCase());
+        tipo = "frasco completo";
+    }
 
-    const precioFormateado = (enStock && precio > 0)
-    ? ` - $${precio.toLocaleString('es-AR')}`
-    : "";
+    if (!perfume) return;
+
+    const enStock = perfume.stock;
+
+    // 🔥 PRECIO REAL (toma descuento si existe)
+    const precioFinal = perfume.discount ? perfume.newPrice : perfume.price;
+
+    const precioTexto = (enStock && precioFinal)
+        ? ` - $${precioFinal.toLocaleString('es-AR')}`
+        : "";
 
     let mensaje = "";
 
-if (enStock) {
-    mensaje = `Hola! 👋\nConsulto por el stock de *${nombre}* (${tipo}${precioFormateado}) en Space Fragancias.\n¿Sigue disponible?`;
-} else {
-    mensaje = `Hola! 👋\nMe interesaría saber cómo puedo conseguir *${nombre}* (${tipo}) aunque actualmente esté agotado.\n¿Va a ingresar nuevamente?`;
-}
+    if (enStock) {
+        mensaje = `Hola! 👋
+Consulto por *${nombre}* (${tipo}${precioTexto}) en Space Fragancias.
+¿Sigue disponible?`;
+    } else {
+        mensaje = `Hola! 👋
+Me interesaría saber cómo conseguir *${nombre}* (${tipo}) aunque esté agotado actualmente.
+¿Va a ingresar nuevamente?`;
+    }
 
-    const numero = "5493498435466"; // Cambia si es necesario
+    const numero = "5493498435466";
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
-
-console.log("✅ Space Fragancias - Mensaje WhatsApp con precio según pestaña activa");
