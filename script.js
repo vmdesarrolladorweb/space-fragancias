@@ -1,6 +1,6 @@
 // ===== DECANTS =====
 const decants = [
-    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6000,newPrice:0, discount:false, zoom:1., position:"50% 68%", stock:true},
+    {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6000,newPrice:0, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:8000, zoom:1., position:"50% 58%", stock:true},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:8000, zoom:1., position:"50% 68%", stock:true},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:5000, zoom:1., position:"80% 55%", stock:true},
