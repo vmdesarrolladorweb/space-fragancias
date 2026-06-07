@@ -51,7 +51,7 @@ const decants = [
 // ===== FRASCOS =====
 const full = [
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:90000,newPrice:85000,discount:true, zoom:1., position:"50% 53%", stock:true},
-	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:80000,newPrice:80000, discount:false, zoom:1., position:"50% 50%", stock:true},
+	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:85000,newPrice:80000, discount:true, zoom:1., position:"50% 50%", stock:true},
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:57000,newPrice:57000,discount:false, zoom:1., position:"50% 40%", stock:true},
 	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:60000,newPrice:55000, discount:false, zoom:1., position:"50% 55%", stock:true},
