@@ -35,7 +35,7 @@ const decants = [
 	{name:"ONYX", brand:"BHARARA", img:"Onyx.jpeg", price:10000,newPrice:9000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:6500,newPrice:5500,discount:false, zoom:1., position:"50% 48%", stock:true},
     {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6000,newPrice:5000,discount:false, zoom:1., position:"50% 55%", stock:true},
-    {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000,newPrice:5000,discount:true, zoom:1., position:"50% 50%", stock:true},
+    {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000,newPrice:5000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:7500,newPrice:6500,discount:false, zoom:1., position:"50% 48%", stock:true},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6000,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:8000,newPrice:7000,discount:false, zoom:1., position:"50% 53%", stock:true},
