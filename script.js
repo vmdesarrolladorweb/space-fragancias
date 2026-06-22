@@ -35,12 +35,13 @@ const decants = [
 	{name:"ONYX", brand:"BHARARA", img:"Onyx.jpeg", price:10000,newPrice:9000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:6500,newPrice:5500,discount:false, zoom:1., position:"50% 48%", stock:true},
     {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6000,newPrice:5000,discount:false, zoom:1., position:"50% 55%", stock:true},
-    {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000,newPrice:5000,discount:true, zoom:1., position:"50% 50%", stock:true},
+    {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6000,newPrice:5000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:7500,newPrice:6500,discount:false, zoom:1., position:"50% 48%", stock:true},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6000,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:8000,newPrice:7000,discount:false, zoom:1., position:"50% 53%", stock:true},
 	{name:"HAWAS MALIBU", brand:"RASASI", img:"HawasMalibu.jpeg", price:7500,newPrice:6500,discount:false, zoom:1., position:"50% 50%", stock:true},
-	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:5500,newPrice:4500,discount:false, zoom:1., position:"50% 40%", stock:true},
+	{name:"HAWAS TROPICAL", brand:"RASASI", img:"HawasTropical.jpeg", price:7500,newPrice:6500,discount:false, zoom:1., position:"50% 47%", stock:true},
+	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:5500,newPrice:4500,discount:true, zoom:1., position:"50% 40%", stock:true},
 	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:7500,newPrice:6500, discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"AMBER OUD DUBAI NIGHT", brand:"AL HARAMAIN", img:"DubaiNight.jpeg", price:8500,newPrice:7500,discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"QAED AL FURSAN UNTAMED", brand:"LATTAFA", img:"Untamed.jpeg", price:5000,newPrice:4000,discount:false, zoom:1.1, position:"50% 37%", stock:true},
@@ -65,7 +66,7 @@ const full = [
     {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:9000, zoom:1., position:"50% 68%", stock:false},
     {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:14000, zoom:1., position:"50% 65%", stock:false},
     {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:9000, zoom:1., position:"50% 61%", stock:false},
-    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:50000,newPrice:47000, discount:true, zoom:1., position:"50% 62%", stock:true},
+    {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:47000,newPrice:47000, discount:false, zoom:1., position:"50% 62%", stock:true},
 	{name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:85000,newPrice:80000,discount:true, zoom:1., position:"50% 48%", stock:true},
     {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.1, position:"50% 70%", stock:false},
     {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:false},
@@ -86,7 +87,7 @@ const full = [
     {name:"INTENSE MAN", brand:"ARMAF", img:"IntenseMan.jpeg", price:8000, zoom:1., position:"50% 55%", stock:false},
     {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg",price:65000,newPrice:60000, discount:true, zoom:1., position:"50% 63%", stock:true},
     {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
-    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:57000,discount:true, zoom:1.2, position:"50% 65%", stock:true}
+    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:57000,discount:false, zoom:1.2, position:"50% 65%", stock:false}
 ];
 
 // ================= GENERADOR DE CARDS =================
