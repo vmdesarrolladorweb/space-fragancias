@@ -69,8 +69,7 @@ const full = [
     {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:47000,newPrice:47000, discount:false, zoom:1., position:"50% 62%", stock:true},
 	{name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:85000,newPrice:80000,discount:true, zoom:1., position:"50% 48%", stock:true},
     {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:8500, zoom:1.1, position:"50% 70%", stock:false},
-    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:false},
-	{name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:8000, zoom:1., position:"50% 68%", stock:false},
+	{name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:8000, zoom:1., position:"50% 55%", stock:false},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:53000,newPrice:51000, zoom:1., position:"50% 58%", stock:false},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:90000,newPrice:85000, discount:false, zoom:1., position:"50% 68%", stock:false},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:8000, zoom:1., position:"80% 55%", stock:false},
@@ -87,7 +86,8 @@ const full = [
     {name:"INTENSE MAN", brand:"ARMAF", img:"IntenseMan.jpeg", price:8000, zoom:1., position:"50% 55%", stock:false},
     {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg",price:65000,newPrice:60000, discount:true, zoom:1., position:"50% 63%", stock:true},
     {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
-    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:57000,discount:false, zoom:1.2, position:"50% 65%", stock:false}
+    {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:57000,discount:false, zoom:1.2, position:"50% 65%", stock:false},
+	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:10000, zoom:1., position:"50% 63%", stock:false}
 ];
 
 // ================= GENERADOR DE CARDS =================
