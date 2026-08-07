@@ -434,6 +434,49 @@ button:hover {
     z-index: 5;
 }
 
+/* ==================== BOTÓN WHATSAPP FIJO ==================== */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 62px;
+    height: 62px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.55);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float img {
+    width: 36px;
+    height: 36px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+}
+
+/* 📱 Tamaño en celular */
+@media (max-width: 600px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .whatsapp-float img {
+        width: 32px;
+        height: 32px;
+    }
+}
 
 /* ==================== RESPONSIVE COMPLETO FINAL ==================== */
 

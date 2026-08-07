@@ -34,7 +34,7 @@ const decants = [
 	{name:"9PM NIGHT OUT", brand:"AFNAN", img:"9PMNightOut.jpeg", price:9500,newPrice:8000,discount:false, zoom:1., position:"50% 52%", stock:true},
 	{name:"ONYX", brand:"BHARARA", img:"Onyx.jpeg", price:10000,newPrice:9500,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:7000,newPrice:5500,discount:false, zoom:1., position:"50% 48%", stock:true},
-    {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 55%", stock:true},
+    {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6500,newPrice:5500,discount:true, zoom:1., position:"50% 55%", stock:true},
     {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:8000,newPrice:6500,discount:false, zoom:1., position:"50% 48%", stock:true},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6500,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
@@ -46,7 +46,7 @@ const decants = [
 	{name:"AMBER OUD DUBAI NIGHT", brand:"AL HARAMAIN", img:"DubaiNight.jpeg", price:9000,newPrice:7500,discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"QAED AL FURSAN UNTAMED", brand:"LATTAFA", img:"Untamed.jpeg", price:5500,newPrice:4000,discount:false, zoom:1.1, position:"50% 37%", stock:true},
 	{name:"MUSAMAM BLACK INTENSE", brand:"LATTAFA", img:"MusamamBlackIntense.jpeg", price:8500,newPrice:7000,discount:false, zoom:1., position:"50% 52%", stock:true},
-    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:9000,newPrice:8000,discount:true, zoom:1., position:"50% 63%", stock:true}
+    {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:9000,newPrice:8000,discount:false, zoom:1., position:"50% 63%", stock:true}
 ];
 
 // ===== FRASCOS =====
@@ -55,7 +55,7 @@ const full = [
 	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:85000,newPrice:85000, discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:60000,newPrice:60000,discount:false, zoom:1., position:"50% 40%", stock:true},
 	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
-	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 55%", stock:true},
+	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 55%", stock:false},
     {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:9000, zoom:1.1, position:"50% 67%", stock:false},
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:false},
