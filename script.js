@@ -57,7 +57,7 @@ const full = [
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:90000,newPrice:90000,discount:false, zoom:1., position:"50% 53%", stock:true},
 	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:85000,newPrice:85000, discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:60000,newPrice:60000,discount:false, zoom:1., position:"50% 40%", stock:true},
-	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:60000, zoom:1., position:"50% 65%", stock:true},
+	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:60000, zoom:1., position:"50% 65%", stock:false},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 55%", stock:false},
     {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:9000, zoom:1.1, position:"50% 67%", stock:false},
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
