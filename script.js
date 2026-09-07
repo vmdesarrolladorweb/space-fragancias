@@ -2,7 +2,7 @@
 const decants = [
     {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6500,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:6000,newPrice:4500,discount:false, zoom:1., position:"50% 58%", stock:true},
-	{name:"CHECKMATE KING", brand:"ARMAF", img:"CheckmateKing.jpeg", price:7000,newPrice:6000,discount:false, zoom:1., position:"50% 50%", stock:true},
+	{name:"CHECKMATE KING", brand:"ARMAF", img:"CheckmateKing.jpeg", price:8000,newPrice:7000,discount:true, zoom:1., position:"50% 50%", stock:true},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:8500,newPrice:7000,discount:false, zoom:1., position:"50% 68%", stock:true},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"80% 55%", stock:true},
     {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 60%", stock:true},
@@ -47,7 +47,7 @@ const decants = [
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:6000,newPrice:4500,discount:false, zoom:1., position:"50% 40%", stock:true},
 	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:8000,newPrice:6500, discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"AMBER OUD DUBAI NIGHT", brand:"AL HARAMAIN", img:"DubaiNight.jpeg", price:9000,newPrice:7500,discount:false, zoom:1., position:"50% 50%", stock:true},
-	{name:"STRONGER WITH YOU INTENSELY", brand:"ARMANI", img:"StrongerIntensely.jpeg", price:17000,newPrice:15000,discount:true, zoom:1., position:"50% 45%", stock:true},
+	{name:"STRONGER WITH YOU INTENSELY", brand:"ARMANI", img:"StrongerIntensely.jpeg", price:15000,newPrice:15000,discount:false, zoom:1., position:"50% 45%", stock:true},
 	{name:"QAED AL FURSAN UNTAMED", brand:"LATTAFA", img:"Untamed.jpeg", price:5500,newPrice:4000,discount:false, zoom:1.1, position:"50% 37%", stock:true},
 	{name:"MUSAMAM BLACK INTENSE", brand:"LATTAFA", img:"MusamamBlackIntense.jpeg", price:8500,newPrice:7000,discount:false, zoom:1., position:"50% 52%", stock:true},
     {name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:9000,newPrice:8000,discount:false, zoom:1., position:"50% 63%", stock:true}
