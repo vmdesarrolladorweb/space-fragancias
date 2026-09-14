@@ -2,7 +2,7 @@
 const decants = [
     {name:"9AM DIVE", brand:"AFNAN", img:"9AMDive.jpeg", price:6500,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"ANSAAM SILVER", brand:"LATTAFA", img:"AnsaamSilver.jpeg", price:6000,newPrice:4500,discount:false, zoom:1., position:"50% 58%", stock:true},
-	{name:"CHECKMATE KING", brand:"ARMAF", img:"CheckmateKing.jpeg", price:8000,newPrice:7000,discount:true, zoom:1., position:"50% 50%", stock:true},
+	{name:"CHECKMATE KING", brand:"ARMAF", img:"CheckmateKing.jpeg", price:8000,newPrice:7000,discount:false, zoom:1., position:"50% 50%", stock:true},
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:8500,newPrice:7000,discount:false, zoom:1., position:"50% 68%", stock:true},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"80% 55%", stock:true},
     {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 60%", stock:true},
@@ -38,7 +38,7 @@ const decants = [
     {name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:7000,newPrice:5500,discount:false, zoom:1., position:"50% 48%", stock:true},
     {name:"DETOUR NOIR", brand:"AL HARAMAIN", img:"DetourNoir.jpeg", price:6500,newPrice:5500,discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"HAWAS BLACK", brand:"RASASI", img:"HawasBlack.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 50%", stock:true},
-	{name:"HAWAS VERDE", brand:"RASASI", img:"HawasVerde.jpeg", price:8000,newPrice:7000,discount:false, zoom:1., position:"50% 50%", stock:true},
+	{name:"HAWAS VERDE", brand:"RASASI", img:"HawasVerde.jpeg", price:8000,newPrice:7000,discount:true, zoom:1., position:"50% 50%", stock:true},
     {name:"HAWAS FIRE", brand:"RASASI", img:"HawasFire.jpeg", price:8000,newPrice:6500,discount:false, zoom:1., position:"50% 48%", stock:true},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:6500,newPrice:5000, discount:false, zoom:1., position:"50% 55%", stock:true},
     {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:8500,newPrice:7000,discount:false, zoom:1., position:"50% 53%", stock:true},
@@ -55,7 +55,7 @@ const decants = [
 
 // ===== FRASCOS =====
 const full = [
-    {name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:90000,newPrice:90000,discount:false, zoom:1., position:"50% 53%", stock:true},
+	{name:"LIQUID BRUN", brand:"FRENCH AVENUE", img:"LiquidBrun.jpeg", price:90000,newPrice:90000,discount:false, zoom:1., position:"50% 53%", stock:true},
 	{name:"VULCAN FEU", brand:"FRENCH AVENUE", img:"VulcanFeu.jpeg", price:85000,newPrice:85000, discount:false, zoom:1., position:"50% 50%", stock:true},
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:60000,newPrice:60000,discount:false, zoom:1., position:"50% 40%", stock:true},
 	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:60000, zoom:1., position:"50% 65%", stock:false},
@@ -64,7 +64,6 @@ const full = [
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:false},
     {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false},
-	{name:"9PM NIGHT OUT", brand:"AFNAN", img:"9PMNightOut.jpeg", price:100000,newPrice:8000,discount:false, zoom:1., position:"50% 52%", stock:true},
     {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
     {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"SpectreGhost.jpeg", price:10000, zoom:1.2, position:"50% 60%", stock:false},
     {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:67000,newPrice:67000, discount:false, zoom:1., position:"50% 67%", stock:true},
@@ -92,8 +91,10 @@ const full = [
     {name:"ISHQ AL SHUYUKH", brand:"LATTAFA", img:"IshqAlShuyukh.jpeg",price:63000,newPrice:63000, discount:false, zoom:1., position:"50% 63%", stock:true},
     {name:"JASSOR", brand:"LATTAFA", img:"Jasoor.jpeg", price:60000, zoom:1., position:"50% 65%", stock:true},
     {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:60000,discount:false, zoom:1.2, position:"50% 65%", stock:true},
-	{name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:75000,newPrice:73000,discount:true, zoom:1., position:"50% 48%", stock:true},
-	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:115000,newPrice:103000,discount:true, zoom:1., position:"50% 63%", stock:true}
+	{name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:75000,newPrice:73000,discount:false, zoom:1., position:"50% 48%", stock:false},
+	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:115000,newPrice:103000,discount:true, zoom:1., position:"50% 63%", stock:true},
+	{name:"9PM NIGHT OUT", brand:"AFNAN", img:"9PMNightOut.jpeg", price:110000,newPrice:100000,discount:true, zoom:1., position:"50% 52%", stock:true}
+
 ];
 
 // ================= GENERADOR DE CARDS =================
