@@ -66,7 +66,7 @@ const full = [
     {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false},
     {name:"SCEPTRE MALACHITE", brand:"MAISON ALHAMBRA", img:"SceptreMalachite.jpeg", price:8000, zoom:1., position:"50% 65%", stock:false},
     {name:"SPECTRE GHOST", brand:"MAISON ALHAMBRA", img:"SpectreGhost.jpeg", price:10000, zoom:1.2, position:"50% 60%", stock:false},
-    {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:67000,newPrice:67000, discount:false, zoom:1., position:"50% 67%", stock:true},
+    {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:67000,newPrice:67000, discount:false, zoom:1., position:"50% 67%", stock:false},
     {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:70000,newPrice:65000, discount:true, zoom:1., position:"50% 68%", stock:true},
     {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:14000, zoom:1., position:"50% 65%", stock:false},
     {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:9000, zoom:1., position:"50% 61%", stock:false},
