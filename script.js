@@ -78,7 +78,7 @@ const full = [
     {name:"9PM ELIXIR", brand:"AFNAN", img:"9PMElixir.jpeg", price:90000,newPrice:85000, discount:false, zoom:1., position:"50% 68%", stock:false},
     {name:"AL NOBLE SAFEER", brand:"LATTAFA", img:"AlNobleSafeer.jpeg", price:8000, zoom:1., position:"80% 55%", stock:false},
 	{name:"VINTAGE RADIO", brand:"LATTAFA", img:"VintageRadio.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 60%", stock:true},
-    {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:60000, zoom:1., position:"50% 60%", stock:true},
+    {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:60000, zoom:1., position:"50% 60%", stock:false},
     {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:8000, zoom:1., position:"50% 67%", stock:false},
     {name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:69000,newPrice:66000, discount:true, zoom:1.1, position:"50% 60%", stock:true},
     {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:false},
