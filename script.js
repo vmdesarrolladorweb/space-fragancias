@@ -33,7 +33,7 @@ const decants = [
     {name:"TERIAQ INTENSE", brand:"LATTAFA", img:"TeriaqIntense.jpeg", price:6500,newPrice:5000,discount:false, zoom:1., position:"50% 67%", stock:true},
 	{name:"NITRO WHITE", brand:"DUMONT", img:"NitroWhite.jpeg", price:7000,newPrice:6000,discount:false, zoom:1., position:"50% 52%", stock:true},
     {name:"THE KINGDOM", brand:"LATTAFA", img:"TheKingdom.jpeg", price:6500,newPrice:6000,discount:false, zoom:1., position:"50% 68%", stock:true},
-    {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:13000,newPrice:12500,discount:false, zoom:1., position:"50% 65%", stock:true},
+    {name:"TOY BOY", brand:"MOSCHINO", img:"ToyBoy.jpeg", price:12000,newPrice:12500,discount:false, zoom:1., position:"50% 65%", stock:true},
     {name:"URBAN MAN ELIXIR", brand:"ARMAF", img:"UrbanManElixir.jpeg", price:7000,newPrice:5500,discount:false, zoom:1., position:"50% 61%", stock:true},
     {name:"VICTORIOSO NERO", brand:"MAISON ALHAMBRA", img:"VictoriosoNero.jpeg", price:5500,newPrice:4000,discount:false, zoom:1., position:"50% 62%", stock:true},
     {name:"WAJOOD", brand:"LATTAFA", img:"Wajood.jpeg", price:7500,newPrice:7000,discount:false, zoom:1.1, position:"50% 70%", stock:true},
