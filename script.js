@@ -66,7 +66,7 @@ const full = [
 	{name:"PHILOS PURA", brand:"MAISON ALHAMBRA", img:"PhilosPura.jpeg", price:63000,newPrice:58000,discount:true, zoom:1., position:"50% 40%", stock:true},
 	{name:"MASHRABYA", brand:"LATTAFA", img:"Mashrabya.jpeg", price:60000, zoom:1., position:"50% 65%", stock:false},
 	{name:"MANDARIN SKY", brand:"ARMAF", img:"MandarinSky.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 55%", stock:false},
-    {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:68000,newPrice:65000,discount:true, zoom:1.1, position:"50% 67%", stock:true},
+    {name:"ODYSSEY AQUA", brand:"ARMAF", img:"OdysseyAqua.jpeg", price:68000,newPrice:65000,discount:false, zoom:1.1, position:"50% 67%", stock:false},
     {name:"ODYSSEY LIMONI", brand:"ARMAF", img:"OdysseyLimoni.jpeg", price:8500, zoom:1.2, position:"50% 67%", stock:false},
     {name:"OUD FOR GLORY", brand:"LATTAFA", img:"OudForGlory.jpeg", price:8000, zoom:1.1, position:"50% 62%", stock:false},
     {name:"SALVO EDP", brand:"MAISON ALHAMBRA", img:"SalvoEDP.jpeg", price:8000, zoom:1., position:"50% 62%", stock:false},
