@@ -88,7 +88,6 @@ const full = [
 	{name:"VINTAGE RADIO", brand:"LATTAFA", img:"VintageRadio.jpeg", price:65000,newPrice:65000, discount:false, zoom:1., position:"50% 60%", stock:true},
     {name:"AL QIAM GOLD", brand:"LATTAFA", img:"AlQiamGold.jpeg", price:60000, zoom:1., position:"50% 60%", stock:false},
     {name:"ASAD", brand:"LATTAFA", img:"Asad.jpeg", price:8000, zoom:1., position:"50% 67%", stock:false},
-    {name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:69000,newPrice:66000, discount:true, zoom:1.1, position:"50% 60%", stock:true},
     {name:"EROS FLAME", brand:"VERSACE", img:"ErosFlame.jpeg", price:15000, zoom:1.2, position:"50% 65%", stock:false},
     {name:"EXTRAVAGANT LOVER", brand:"MAISON ALHAMBRA", img:"Extravagantlover.jpeg", price:8000, zoom:1.1, position:"50% 67%", stock:false},
     {name:"FAKHAR PLATIN", brand:"LATTAFA", img:"FakharPlatin.jpeg", price:8000, zoom:1., position:"50% 50%", stock:false},
@@ -101,6 +100,7 @@ const full = [
     {name:"KHAMRAH QAHWA", brand:"LATTAFA", img:"KhamrahQahwa.jpeg", price:60000,newPrice:55000,discount:false, zoom:1.2, position:"50% 65%", stock:true},
 	{name:"AMBER OUD GOLD EDITION", brand:"AL HARAMAIN", img:"GoldEdition.jpeg", price:115000,newPrice:103000,discount:true, zoom:1., position:"50% 63%", stock:true},
 	{name:"9PM NIGHT OUT", brand:"AFNAN", img:"9PMNightOut.jpeg", price:110000,newPrice:100000,discount:true, zoom:1., position:"50% 52%", stock:true},
+	{name:"ASAD BOURBON", brand:"LATTAFA", img:"AsadBourbon.jpeg", price:69000,newPrice:66000, discount:true, zoom:1.1, position:"50% 60%", stock:true},
 	{name:"ASAD ELIXIR", brand:"LATTAFA", img:"AsadElixir.jpeg", price:75000,newPrice:72000,discount:true, zoom:1., position:"50% 48%", stock:true}
 ];
 
